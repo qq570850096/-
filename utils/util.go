@@ -80,7 +80,7 @@ func SendMail(name, mobile, toUser, toUsername, title, subject string, id int) e
 	fname := "tmp/" + name + "-" + mobile + ".pdf"
 	e.AttachFile(fname)
 	// 发送邮件(如果使用QQ邮箱发送邮件的话，passwd不是邮箱密码而是授权码)
-	err = e.Send("smtp.163.com:25", smtp.PlainAuth("", "qq570850096@163.com", "VWXYGAVRMNVZYJUG", "smtp.163.com"))
+	err = e.Send("smtp.163.com:25", smtp.PlainAuth("", "qq570850096@163.com", "邮件秘钥", "smtp.163.com"))
 	fmt.Println(err)
 	return err
 }
@@ -120,7 +120,7 @@ func SendMailToSchool(name, toUser, toUsername, subject string) error {
 	fname := "tmp/recruit.xlsx"
 	e.AttachFile(fname)
 	// 发送邮件(如果使用QQ邮箱发送邮件的话，passwd不是邮箱密码而是授权码)
-	err = e.Send("smtp.163.com:25", smtp.PlainAuth("", "qq570850096@163.com", "VWXYGAVRMNVZYJUG", "smtp.163.com"))
+	err = e.Send("smtp.163.com:25", smtp.PlainAuth("", "qq570850096@163.com", "邮件秘钥", "smtp.163.com"))
 	fmt.Println(err)
 	return err
 }
