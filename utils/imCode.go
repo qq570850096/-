@@ -28,8 +28,8 @@ type verifyCode struct {
 var (
 	msgurl    = "https://api.netease.im/sms/sendcode.action"
 	verifyurl = "https://api.netease.im/sms/verifycode.action"
-	appKey    = "64ece9956151b40e2bd473a6bc749354"
-	appSecret = "2d6c90adcee7"
+	appKey    = "网易云app key"
+	appSecret = "app秘钥"
 	nonce     = "1234"
 )
 
