@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+    <link rel="stylesheet" type="text/css" href="/static/icon/iconfont.css">
+    <link rel="stylesheet" href="/static/css/login.css"/>
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/vue.min.js"></script>
+    <script src="/static/layer/layer.js"></script>
+</head>
+<body style="background-image: url('/static/img/banner_2.jpg')">
+<div class="login_box" >
+    <a class="go_home" style="background-image: url('/static/img/white.png');background-repeat:no-repeat; width:230px;height:180px;" href="/user/login"></a>
+    <div class="login_form_content" id="loginForm">
+        <form name="login_form" id="">
+            <input type="text" id="user_name" name="user_name" placeholder="请输入手机号" v-model="form.userName"/>
+            <label for="user_name"></label>
+            <input type="password" id="user_pass" name="user_pass" placeholder="请输入密码" v-model="form.userPass"/>
+            <label for="user_pass"></label>
+            <a class="found_pass " style="font-size: 23px" href="/hr/login">hr登陆</a>
+
+
+            <input type="button" id="login_btn" v-on:click="login" value="登  录">
+            <a class="found_pass " href="/user/RePass">找回密码</a>
+        </form>
+
+
+    </div>
+    <!--#登录js-->
+    <script src="/static/js/user_login.js"></script>
+    <div class="p_content">
+        <span class="p1">没有账号,直接<a href="/user/register" class="reg_a">注册</a></span>
+    </div>
+    <div class="div_bottom" style="padding-top:20px;">
+        <div class="bottom_text">使用以下方式快捷登录</div>
+        <div class="login_way">
+            <ul>
+                <li><a class="iconfont icon-qq"></a></li>
+                <li><a class="iconfont icon-weixin" ></a></li>
+                <li><a class="iconfont icon-zhifubao" ></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

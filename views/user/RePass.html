@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>重置密码</title>
+    <link rel="stylesheet" href="/static/sign_up/css/style.css" />
+    <script type="text/javascript" src="/static/sign_up/js/phone_varify.js" ></script>
+    <script type="text/javascript" src="/static/sign_up/js/jquery.min.js" ></script>
+    <script src="/static/sign_up/js/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/sign_up/css/sweetalert.css">
+</head>
+<body>
+<section class="container">
+    <article class="half">
+        <h1>重置密码</h1>
+        <div class="content">
+            <div class="signup-cont cont">
+                <form id="repass">
+                    <input type="tel" name="tel" id="tel" class="inpt" required="" placeholder="请输入您的手机号" maxlength="11">
+                    <input type="password" name="password" id="password" class="inpt" required="required" placeholder="请重新设置密码">
+                    <input name="repassword" id="repw" type="password" class="inpt" placeholder="确认密码" onkeyup="checkpassword()">
+
+                    <img src="/static/sign_up/img/closeeye.jpg" id="show_pass" onclick="showPass();"/>
+                    <span id="tishi"></span></input>
+                    <div class="phone-var">
+
+                        <input type="text" name="code" id="code" class="inpt" required="" placeholder="验证码" maxlength="4">
+                        <input type="button" value="获取验证码" class="submit" id="send_code" onclick="phone_varify_send();">
+                    </div>
+
+                        <input type="button"  value="下一步" class="submit" id ="submit"  onclick="phone_varify_code_re();return false;">
+                    <div class="submit-wrap">
+                        <a href="/" >DLU招聘管理系统</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </article>
+    <div class="half bg">
+
+
+    </div>
+</section>
+
+<script>
+    function checkpassword() {
+        var password = document.getElementById("password").value;
+        var repassword = document.getElementById("repw").value;
+
+        if(password == repassword) {
+            document.getElementById("tishi").innerHTML="<font color='green'>两次密码输入一致</font>";
+            document.getElementById("submit").disabled = false;
+
+        }else {
+            document.getElementById("tishi").innerHTML="<font color='red'>两次输入密码不一致!</font>";
+            document.getElementById("submit").disabled = true;
+        }
+    }
+</script>
+
+</body>
+</html>

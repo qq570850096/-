@@ -1,0 +1,171 @@
+2021-03-17T13:51:39.696+0800	[31mERROR[0m	controller/handler.go:31	Error 1054: Unknown column 'user.id' in 'field list'
+github.com/GoAdminGroup/go-admin/modules/logger.Error
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/modules/logger/logger.go:285
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).GlobalDeferHandler
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/handler.go:31
+runtime.gopanic
+	D:/Go/src/runtime/panic.go:679
+github.com/GoAdminGroup/go-admin/modules/db.CommonQuery
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/modules/db/performer.go:20
+github.com/GoAdminGroup/go-admin/modules/db.(*Mysql).QueryWithConnection
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/modules/db/mysql.go:83
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).getDataFromDatabase
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/modules/table/default.go:565
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).GetData
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/modules/table/default.go:148
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTableData
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/show.go:70
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTable
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/show.go:102
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).ShowInfo
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/show.go:60
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard.(*Guard).CheckPrefix
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard/guard.go:51
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/modules/auth.(*Invoker).Middleware.func1
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/modules/auth/middleware.go:132
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/router.go:106
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/adapter/beego.(*Beego).AddHandler.func1
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/adapter/beego/beego.go:90
+github.com/astaxie/beego.(*ControllerRegister).ServeHTTP
+	D:/go_workspace/src/job_admin/vendor/github.com/astaxie/beego/router.go:813
+net/http.serverHandler.ServeHTTP
+	D:/Go/src/net/http/server.go:2802
+net/http.(*conn).serve
+	D:/Go/src/net/http/server.go:1890
+2021-03-17T15:23:06.172+0800	[31mERROR[0m	controller/new.go:118	insert data error: 4:1: expected 'IDENT', found 'import'
+github.com/GoAdminGroup/go-admin/modules/logger.Error
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/modules/logger/logger.go:285
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).NewForm
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/new.go:118
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard.(*Guard).NewForm
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard/new.go:121
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard.(*Guard).CheckPrefix
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard/guard.go:51
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/modules/auth.(*Invoker).Middleware.func1
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/modules/auth/middleware.go:132
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/router.go:106
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/adapter/beego.(*Beego).AddHandler.func1
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/adapter/beego/beego.go:90
+github.com/astaxie/beego.(*ControllerRegister).ServeHTTP
+	D:/go_workspace/src/job_admin/vendor/github.com/astaxie/beego/router.go:813
+net/http.serverHandler.ServeHTTP
+	D:/Go/src/net/http/server.go:2802
+net/http.(*conn).serve
+	D:/Go/src/net/http/server.go:1890
+2021-03-17T15:23:20.798+0800	[31mERROR[0m	controller/new.go:118	insert data error: 4:1: expected 'IDENT', found 'import'
+github.com/GoAdminGroup/go-admin/modules/logger.Error
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/modules/logger/logger.go:285
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).NewForm
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/new.go:118
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard.(*Guard).NewForm
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard/new.go:121
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard.(*Guard).CheckPrefix
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard/guard.go:51
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/modules/auth.(*Invoker).Middleware.func1
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/modules/auth/middleware.go:132
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/router.go:106
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/adapter/beego.(*Beego).AddHandler.func1
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/adapter/beego/beego.go:90
+github.com/astaxie/beego.(*ControllerRegister).ServeHTTP
+	D:/go_workspace/src/job_admin/vendor/github.com/astaxie/beego/router.go:813
+net/http.serverHandler.ServeHTTP
+	D:/Go/src/net/http/server.go:2802
+net/http.(*conn).serve
+	D:/Go/src/net/http/server.go:1890
+2021-03-17T15:31:49.506+0800	[31mERROR[0m	controller/handler.go:31	Error 1054: Unknown column 'user.id' in 'field list'
+github.com/GoAdminGroup/go-admin/modules/logger.Error
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/modules/logger/logger.go:285
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).GlobalDeferHandler
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/handler.go:31
+runtime.gopanic
+	D:/Go/src/runtime/panic.go:679
+github.com/GoAdminGroup/go-admin/modules/db.CommonQuery
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/modules/db/performer.go:20
+github.com/GoAdminGroup/go-admin/modules/db.(*Mysql).QueryWithConnection
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/modules/db/mysql.go:83
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).getDataFromDatabase
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/modules/table/default.go:565
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).GetData
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/modules/table/default.go:148
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTableData
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/show.go:70
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTable
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/show.go:102
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).ShowInfo
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/show.go:60
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard.(*Guard).CheckPrefix
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard/guard.go:51
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/modules/auth.(*Invoker).Middleware.func1
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/modules/auth/middleware.go:132
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/router.go:106
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/adapter/beego.(*Beego).AddHandler.func1
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/adapter/beego/beego.go:90
+github.com/astaxie/beego.(*ControllerRegister).ServeHTTP
+	D:/go_workspace/src/job_admin/vendor/github.com/astaxie/beego/router.go:813
+net/http.serverHandler.ServeHTTP
+	D:/Go/src/net/http/server.go:2802
+net/http.(*conn).serve
+	D:/Go/src/net/http/server.go:1890
+2021-03-18T10:05:49.243+0800	[31mERROR[0m	controller/plugins.go:380	download plugins errormap[downloadURL:https://github.com/GoAdminGroup/librarian/archive/v0.0.5.zip error:Get https://github.com/GoAdminGroup/librarian/archive/v0.0.5.zip: dial tcp 13.250.177.223:443: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.]
+github.com/GoAdminGroup/go-admin/modules/logger.Error
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/modules/logger/logger.go:285
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).PluginDownload
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/plugins.go:380
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/modules/auth.(*Invoker).Middleware.func1
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/modules/auth/middleware.go:132
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/router.go:106
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/adapter/beego.(*Beego).AddHandler.func1
+	D:/go_workspace/src/job_admin/vendor/github.com/GoAdminGroup/go-admin/adapter/beego/beego.go:90
+github.com/astaxie/beego.(*ControllerRegister).ServeHTTP
+	D:/go_workspace/src/job_admin/vendor/github.com/astaxie/beego/router.go:813
+net/http.serverHandler.ServeHTTP
+	D:/Go/src/net/http/server.go:2802
+net/http.(*conn).serve
+	D:/Go/src/net/http/server.go:1890

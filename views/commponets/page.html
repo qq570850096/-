@@ -1,0 +1,45 @@
+
+
+<div class="job-list-container container">
+    <div class="jot-tab-content row">
+        <div class="line">
+            <ul class="col-md-4 no-margin-bottom">
+                <li class="nav_item col-md-4 active"><a  class="" href="#">热门推荐</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="job-summary-container container">
+        <div class="content " id="job-content">
+            <<<range $_, $elem := .posInfo>>>
+
+                <div class="col-lg-4 summary-border">
+                    <div class="job-summary">
+                        <div class="line-1 row">
+                            <div class="job-name col-md-8"><a href="/position/<<<$elem.PosId>>>"><<<$elem.Title>>></a><span class="create-item">数日前发布<span class="lianxi iconfont icon-lianxi"></span> </span></div>
+                            <div class="job-salary col-md-4  text-right"><<<$elem.SalaryDown>>>-<<<$elem.SalaryUp>>>k</div>
+                        </div>
+                        <<</*                       <div class="line-2 job-require"><<<$elem.Requirement>>></div>*/>>>
+                        <div class="line-3 job-tag-content row">
+                            <ul class="" >
+                                <li class="col-md-3 job-tag" >数据分析</li>
+                                <li class="col-md-3 job-tag" >全栈开发</li>
+                            </ul>
+                        </div>
+                        <div class="company">
+                            <img style="width: 40px;height: 40px" class="img-rounded" src="static/img/img<<<$elem.Id>>>.jpg"/>
+                            <div class="company-right">
+                                <div class="row company-name">
+                                    <a href=""><<<$elem.CompanyName>>></a>
+                                </div>
+                                <div class="row company-description">
+                                    大型互联网公司/上市公司
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            <<<end>>>
+        </div>
+    </div>
+</div>
